@@ -4,11 +4,17 @@
  * and open the template in the editor.
  */
 package messageservice2;
-
+import java.util.Scanner;
 /**
  *
  * @author Mitch
  */
-public interface Output {
+public class ConsoleMessageInput implements MessageInput{
+
+    @Override
+    public String getMessage() {
+        Scanner keyboardScanner = new Scanner(System.in);
+        return keyboardScanner.nextLine();
+    }
     
 }

@@ -9,6 +9,11 @@ package messageservice2;
  *
  * @author Mitch
  */
-public interface Input {
+public class ConsoleMessageOutput implements MessageOutput {
+
+    @Override
+    public void outputMessage(String message) {
+        System.out.println(message);
+    }
     
 }

@@ -10,5 +10,30 @@ package messageservice2;
  * @author Mitch
  */
 public class MessageManager {
+    private MessageInput input;
+    private MessageOutput output;
+	
+    //Encapsulated method
+    public void processMessage(){
+        String message = input.getMessage();
+        output.outputMessage(message);
+    }
+
+    public MessageInput getInput() {
+        return input;
+    }
+
+    public void setInput(MessageInput input) {
+        this.input = input;
+    }
+
+    public MessageOutput getOutput() {
+        return output;
+    }
+
+    public void setOutput(MessageOutput output) {
+        this.output = output;
+    }
+
     
 }

@@ -9,6 +9,6 @@ package messageservice2;
  *
  * @author Mitch
  */
-public class GuiInput implements Input{
-    
+public interface MessageOutput {
+    public abstract void outputMessage( String message );
 }

@@ -15,7 +15,17 @@ public class MessageService2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        /**Liskov's substitution method in place here. 
+         * MessageInput/output stays the same. 
+         * Can change ConsoleMessageInput to GuiMessageInput without any other changes. (line 22)
+        */
+        MessageInput input = new ConsoleMessageInput();
+        MessageOutput output = new GuiMessageOutput();
+        
+        MessageManager service = new MessageManager();
+        service.setInput(input);
+        service.setOutput(output);
+        service.processMessage();
     }
     
 }

@@ -9,6 +9,6 @@ package messageservice2;
  *
  * @author Mitch
  */
-public class ConsoleOutput implements Output {
-    
+public interface MessageInput {
+    public abstract String getMessage();
 }
