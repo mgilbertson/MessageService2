@@ -22,7 +22,9 @@ public class MessageService2 {
         MessageInput input = new ConsoleMessageInput();
         MessageOutput output = new GuiMessageOutput();
         
-        MessageManager service = new MessageManager();
+        //Line 26 instantiates a MessageManager through the constructor we created in MessageManager
+        MessageManager service = new MessageManager(input, output);
+        //Lines 28/29 instantiates a messageManager through the default constructor. They both work in the same way.
         service.setInput(input);
         service.setOutput(output);
         service.processMessage();

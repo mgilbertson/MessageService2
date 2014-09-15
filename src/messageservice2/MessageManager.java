@@ -12,8 +12,17 @@ package messageservice2;
 public class MessageManager {
     private MessageInput input;
     private MessageOutput output;
+    
+    public MessageManager(){
+        
+    }
+    
+    public MessageManager(MessageInput input, MessageOutput output){
+        this.input = input;
+        this.output = output;
+    }
 	
-    //Encapsulated method
+    //Encapsulated method. Calls the the input method getMessage
     public void processMessage(){
         String message = input.getMessage();
         output.outputMessage(message);
@@ -24,6 +33,9 @@ public class MessageManager {
     }
 
     public void setInput(MessageInput input) {
+        if (input == null){
+            //notify user input is invalid
+        }
         this.input = input;
     }
 
