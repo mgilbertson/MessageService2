@@ -24,7 +24,7 @@ public class MessageManager {
 	
     //Encapsulated method. Calls the the input method getMessage
     public void processMessage(){
-        String message = input.getMessage();
+        Message message = input.getMessage();
         output.outputMessage(message);
     }
 

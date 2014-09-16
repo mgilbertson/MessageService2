@@ -4,17 +4,13 @@
  * and open the template in the editor.
  */
 package messageservice2;
-import javax.swing.JOptionPane;
+
 /**
  *
  * @author Mitch
  */
-public class GuiMessageInput implements MessageInput{
-
-    @Override
-    public Message getMessage() {
-        String message = JOptionPane.showInputDialog("Enter your message");
-        return message;
-    }
+public class Message {
+    private String content;
+    private int length;
     
 }

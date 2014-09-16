@@ -10,5 +10,5 @@ package messageservice2;
  * @author Mitch
  */
 public interface MessageInput {
-    public abstract String getMessage();
+    public abstract Message getMessage();
 }
