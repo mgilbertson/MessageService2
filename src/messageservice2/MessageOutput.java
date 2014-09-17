@@ -10,5 +10,5 @@ package messageservice2;
  * @author Mitch
  */
 public interface MessageOutput {
-    public abstract void outputMessage( Message message );
+    public abstract void outputMessage( String message );
 }

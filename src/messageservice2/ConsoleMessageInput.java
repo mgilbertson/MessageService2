@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class ConsoleMessageInput implements MessageInput{
 
     @Override
-    public Message getMessage() {
+    public String getMessage() {
         Scanner keyboardScanner = new Scanner(System.in);
         return keyboardScanner.nextLine();
     }

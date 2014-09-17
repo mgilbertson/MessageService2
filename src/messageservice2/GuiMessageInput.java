@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 public class GuiMessageInput implements MessageInput{
 
     @Override
-    public Message getMessage() {
+    public String getMessage() {
         String message = JOptionPane.showInputDialog("Enter your message");
         return message;
     }
