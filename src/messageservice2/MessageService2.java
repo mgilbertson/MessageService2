@@ -20,7 +20,7 @@ public class MessageService2 {
          * Can change ConsoleMessageInput to GuiMessageInput without any other changes. (line 22)
         */
         MessageInput input = new GuiMessageInput();
-        MessageOutput output = new GuiMessageOutput();
+        MessageOutput output = new ConsoleMessageOutput();
         
         //Line 26 instantiates a MessageManager through the constructor we created in MessageManager
         MessageManager service = new MessageManager(input, output);
